@@ -2,7 +2,8 @@
     "manifest_version": 2,
     "name": "videoContinuerAP",
     "version": "1.0",
-    "descrption": "",
+    "description": "Makes sure that autoplay of a playlist continues on big video platforms.",
+    "homepage_url": "https://github.com/andreas-wien/videoContinuerAP",
     "icons": {
         "48": "icons/infinity48.png"
     },
