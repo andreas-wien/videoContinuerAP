@@ -4,12 +4,11 @@ var interval = setInterval(function () {
   var confirmButton = document.getElementById("confirm-button");
   if (confirmButton) {
     confirmButton.children[0].children[0].children[0].click();
-    console.log("Button clicked!");
-    confirmButton.parentElement.parentElement.remove();
-    var ytPauseButton = document.querySelector('[data-title-no-tooltip="Pause"]');
-    if (!ytPauseButton) {
-      var e = new KeyboardEvent('keydown',{'keyCode':32,'which':32});
-      console.log("Play button clicked!");
+    console.log("Confirm button clicked!");
+    video = document.querySelector("#movie_player > div:nth-child(1) > video:nth-child(1)");
+    if (video.paused === true) {
+      video.play();
+      console.log("Video continued!");
     }
   }
 }, 1000);
