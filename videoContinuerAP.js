@@ -5,6 +5,7 @@ var interval = setInterval(function () {
   if (confirmButton) {
     confirmButton.children[0].children[0].children[0].click();
     console.log("Confirm button clicked!");
+    confirmButton.parentElement.parentElement.remove();
     video = document.querySelector("#movie_player > div:nth-child(1) > video:nth-child(1)");
     if (video.paused === true) {
       video.play();
